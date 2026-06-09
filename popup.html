@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 210px;
+      background: #fff;
+      color: #1a2800;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      font-size: 12.5px;
+      border: 1px solid #a0cc50;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background: #8ec239;
+      padding: 10px 13px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .header svg { flex-shrink: 0; }
+    h1 { font-size: 12.5px; font-weight: 600; color: #fff; letter-spacing: .15px; }
+    .body { padding: 11px 13px 10px; display: flex; flex-direction: column; gap: 8px; }
+    p { color: #3a5800; line-height: 1.6; font-size: 12px; }
+    p strong { color: #1a2800; font-weight: 600; }
+    .tip {
+      background: #f4fae6;
+      border: 1px solid #a0cc50;
+      border-radius: 5px;
+      padding: 8px 10px;
+      font-size: 11.5px;
+      color: #3a5800;
+      line-height: 1.75;
+    }
+    .tip strong { color: #6a9a20; font-weight: 600; }
+    .footer {
+      border-top: 1px solid #c8e888;
+      padding: 6px 13px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: 4px;
+      text-decoration: none; opacity: .5; transition: opacity .15s;
+    }
+    .brand:hover { opacity: .9; }
+    .brand img { width: 13px; height: 13px; object-fit: contain; border-radius: 2px; }
+    .brand span { font-size: 9.5px; font-weight: 600; color: #4a7000; letter-spacing: .4px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+      <path d="M4 6h16M4 12h10M4 18h13" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+    <h1>AI2 XML Tool</h1>
+  </div>
+  <div class="body">
+    <p>Open MIT App Inventor and switch to the <strong>Blocks</strong> editor — the tool panel will appear on the page.</p>
+      <div class="tip">
+        <strong>Import:</strong> Paste BlockScript/XML or drop .bs file → Inject<br>
+        <strong>Export:</strong> Export All → toggle for XML / BlockScript
+      </div>
+  </div>
+  <div class="footer">
+    <a class="brand" href="https://pocketive.tachion.tech/blockscript" target="_blank">
+      <img src="icons/pocketive.png" alt="" onerror="this.style.display='none'">
+      <span>Pocketive</span>
+    </a>
+  </div>
+</body>
+</html>

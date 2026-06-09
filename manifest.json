@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "BlockScript Injector",
+  "version": "1.9",
+  "description": "BlockScript/XML Injector/Exporter for MIT AI2",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://ai2.appinventor.mit.edu/*",
+    "https://*.appinventor.mit.edu/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "BlockScript Injector"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
